@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter"
+}
+
+container {
+  @apply
+    bg-gray-100
+    flex
+    h-screen
+    relative
+}
+
+card {
+  @apply
+    bg-white
+    mt-10
+    mx-10
+    my-auto
+    overflow-hidden
+    p-4
+    rounded-lg
+    shadow-md
+    z-10
+
+    md:p-6
+    md:mt-20
+    md:ml-20
+}
+
+header {
+  @apply
+    text-2xl
+
+    lg:text-4xl
+}
+
+subtext {
+  @apply
+    p-2
+    text-gray-500
+    text-sm
+}
+
+link-row {
+  @apply
+    flex
+    flex-col
+    flex-wrap
+    pt-2
+    text-sm
+
+    md:flex-row
+}
+
+link-row > span {
+  @apply
+    pl-2
+}
+
+link-row > span > a > i {
+  @apply
+    pr-1
+}
+
+squares {
+  @apply
+    absolute
+    col-span-3
+    col-start-1
+    row-span-3
+    row-start-1
+    z-0
+}
+
+left-subtext {
+  @apply
+    absolute
+    bottom-0
+    float-left
+    invisible
+    p-2
+    text-xs
+    text-gray-500
+
+    md:visible
+}
+
+left-subtext > i {
+  color: Tomato /* heart */
+}
